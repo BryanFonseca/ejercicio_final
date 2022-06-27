@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  background: linear-gradient(to right, #cac531, #f3f9a7);
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  background: linear-gradient(to right, #22c1c3, #fdbb2d);
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+}
+
+.scrollableContainer {
+  overflow-y: auto;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0.2em 0.4em;
+}
+
+button:hover {
+  cursor: pointer;
+}

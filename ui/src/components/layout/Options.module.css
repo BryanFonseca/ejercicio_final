@@ -1,0 +1,14 @@
+.options > * {
+  display: block;
+  border-left: 3px solid transparent;
+  padding-left: 0.4em;
+  transition: border 0.2s;
+}
+
+.options > * + * {
+  margin-top: 0.4em;
+}
+
+.activeLink {
+  border-left: 3px solid #333;
+}

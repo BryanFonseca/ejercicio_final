@@ -1,0 +1,42 @@
+.layoutContainer {
+  background-color: #eee;
+  height: 80vh;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 18fr minmax(0, 82fr);
+  border-radius: 0.5em;
+}
+
+.sideBar,
+.main {
+  padding: 1.2em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+}
+
+.sideBar .info p + p {
+  margin-top: 0.4em;
+}
+
+.sideBarTop > * + * {
+  margin-top: 1.4em;
+}
+
+.sideBar {
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoutButton {
+  padding: 0.2em 0.4em;
+}
+
+.logoutButton:hover {
+  cursor: pointer;
+}

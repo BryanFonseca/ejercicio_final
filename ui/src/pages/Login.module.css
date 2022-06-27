@@ -1,0 +1,69 @@
+.loginForm {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  background-color: #eee;
+  border-radius: 0.6em;
+  padding: 2em;
+  width: 20rem;
+  position: relative;
+}
+
+.loginForm label {
+  width: 100%;
+}
+
+.loginForm > div > * {
+  display: block;
+}
+
+.loginForm > div + div {
+  margin-top: 1.2em;
+}
+
+.inputContainer,
+.inputContainer input {
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.inputContainer label {
+  margin-bottom: 0.4em;
+}
+
+.inputContainer input {
+  border-radius: 0;
+  border: 1px solid grey;
+  padding: 0.25em 0.2em;
+}
+
+.validationError {
+  font-size: 0.8em;
+  color: red;
+}
+
+.button,
+.buttonContainer {
+  width: 100%;
+}
+
+.loginForm .button {
+  background-color: #fff;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  padding: 0.5em 0.4em;
+  border-radius: 0;
+}
+
+.loginForm .button:hover {
+  cursor: pointer;
+}
+
+.feedback {
+  position: absolute;
+  top: 0;
+  transform: translateY(-200%);
+  text-transform: uppercase;
+}
