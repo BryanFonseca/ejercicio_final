@@ -67,3 +67,23 @@
   transform: translateY(-200%);
   text-transform: uppercase;
 }
+
+.registerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1em;
+}
+
+.registerText {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.separator {
+  width: 100%;
+  margin-top: 1em;
+  background-color: #777;
+  height: 1px;
+}

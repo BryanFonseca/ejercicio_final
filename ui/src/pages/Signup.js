@@ -33,6 +33,10 @@ const SignupFormik = () => {
     });
   };
 
+  const cancelarHandler = () => {
+    history.replace("/login");
+  };
+
   return (
     <Formik
       initialValues={{
@@ -77,6 +81,9 @@ const SignupFormik = () => {
         </Select>
 
         <button type="submit">Registrar</button>
+        <button onClick={cancelarHandler} type="button">
+          Cancelar
+        </button>
       </Form>
     </Formik>
   );

@@ -54,6 +54,10 @@ const LoginFormik = () => {
       .catch((err) => {});
   }
 
+  const registrarseHandler = () => {
+    history.replace("/signup");
+  };
+
   return (
     <form className={classes.loginForm} onSubmit={formik.handleSubmit}>
       <div className={classes.inputContainer}>
@@ -92,6 +96,19 @@ const LoginFormik = () => {
       <div className={classes.buttonContainer}>
         <button className={classes.button} type="submit">
           Iniciar sesión
+        </button>
+      </div>
+
+      <div className={classes.separator}></div>
+
+      <div className={classes.registerContainer}>
+        <p className={classes.registerText}>¿Eres nuevo?</p>
+        <button
+          onClick={registrarseHandler}
+          type="button"
+          className={classes.button}
+        >
+          Registrarse
         </button>
       </div>
       {isLoading && <p className={classes.feedback}>Cargando...</p>}
